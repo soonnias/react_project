@@ -1,0 +1,54 @@
+.userInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw; /* Відстань між елементами у відсотках від ширини вікна */
+  padding: 2vh; /* Внутрішній відступ у відсотках від висоти вікна */
+  min-width: 90px;
+}
+
+.userInput p {
+  margin: 0; /* Скидає стандартний зовнішній відступ */
+  font-size: 2vw; /* Розмір шрифту у відсотках від ширини вікна */
+  color: white;
+}
+
+.userInput input {
+  padding: 1vh 2vw; /* Внутрішні відступи у відсотках від висоти та ширини вікна */
+  font-size: 1.5vw; /* Розмір шрифту у відсотках від ширини вікна */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.userInput button {
+  padding: 1vh 3vw; /* Внутрішні відступи у відсотках від висоти та ширини вікна */
+  font-size: 1.5vw; /* Розмір шрифту у відсотках від ширини вікна */
+  background-color: #c4a701;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.userInput button:hover {
+  background-color: #b39800;
+}
+
+
+@media (max-width: 768px) {
+  .userInput {
+    flex-direction: column; /* Вирівнювання елементів по вертикалі на менших екранах */
+    gap: 1vw;
+  }
+
+  .userInput p {
+    font-size: 4vw; /* Зменшення розміру шрифту на менших екранах */
+  }
+
+  .userInput input,
+  .userInput button {
+    font-size: 2.5vw;
+    padding: 2vh 2vw; /* Збільшення відступів для зручності */
+  }
+}
